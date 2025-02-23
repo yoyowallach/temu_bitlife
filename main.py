@@ -9,7 +9,8 @@
 
 import random
 import time
-import copy
+import os
+
 
 # define the job class
 class Job:
