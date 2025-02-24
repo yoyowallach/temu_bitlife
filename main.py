@@ -1,10 +1,6 @@
 # main.py
 
 
-'''
-
-'''
-
 # import packages
 
 import random
