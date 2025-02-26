@@ -177,5 +177,4 @@ def friend_request(person, adcounter):
 print(Sister.relation)
 friend_request(Sister, adcounter)
 print(Sister.relation)
-
-
+# hi
