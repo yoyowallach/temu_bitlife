@@ -179,25 +179,38 @@ def friend_request(person, adcounter):
 # print(Sister.relation)
 
 def display_ads(adcounter):
+    """
+    Display ads based on adcounter value.
+    Will not display the same ad twice until all ads have been shown.
+    """
     ads_played = []
-    if adcounter >= 9:
-        print("Loop 1")
-        sponsor_keys = list(sponsors.keys())
-        for i in range(min(adcounter, len(sponsor_keys))):
-            if len(ads_played) >= 8:
-                ads_played = []
-            sponsor_key = sponsor_keys[i % len(sponsor_keys)]
-            if sponsor_key not in ads_played:
-                print(sponsors[sponsor_key])
-                print("\n\n\n")
-                ads_played.append(sponsor_key)
-    else:
-        for ads in sponsors:
-            print("loop 2")
-            if ads not in ads_played:
-                print(sponsors[ads])
-                print("\n\n\n")
-                ads_played.append(ads)
+    # Get all sponsor keys
+    sponsor_keys = list(sponsors.keys())
+    
+    # Determine how many ads to display
+    ads_to_display = min(adcounter, len(sponsor_keys))
+    
+    # Keep track of how many ads we've displayed
+    ads_displayed = 0
+    
+    # Continue until we've displayed enough ads
+    while ads_displayed < ads_to_display:
+        # If we've shown all sponsors, reset the tracking list
+        if len(ads_played) >= len(sponsor_keys):
+            ads_played = []
+            print("--- New Ad Cycle ---")
+        
+        # Choose a random sponsor that hasn't been shown yet
+        available_sponsors = [key for key in sponsor_keys if key not in ads_played]
+        if available_sponsors:
+            sponsor_key = random.choice(available_sponsors)
+            print(f"AD {ads_displayed + 1}/{ads_to_display}:")
+            print(sponsors[sponsor_key])
+            print("\n\n")
+            
+            # Mark this ad as played
+            ads_played.append(sponsor_key)
+            ads_displayed += 1
 adcounter = 9
 display_ads(adcounter)
 '''
