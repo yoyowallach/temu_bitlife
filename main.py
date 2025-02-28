@@ -174,6 +174,40 @@ def friend_request(person, adcounter):
         return adcounter
 
 # Sister, adcounter = friend_request(Sister, adcounter)
-print(Sister.relation)
-friend_request(Sister, adcounter)
-print(Sister.relation)
+# print(Sister.relation)
+# friend_request(Sister, adcounter)
+# print(Sister.relation)
+
+def display_ads(adcounter):
+    ads_played = []
+    if adcounter >= 9:
+        print("Loop 1")
+        for i in range(adcounter):
+            if len(ads_played) >= 8:
+                ads_played = []
+                print(sponsors[i])
+                print("\n\n\n")
+                ads_played.append(sponsors[i])
+            elif sponsors[i].key() not in ads_played:
+                print(sponsors[i])
+                print("\n\n\n")
+                ads_played.append(sponsors[i])
+    else:
+        for ads in sponsors:
+            print("loop 2")
+            if ads not in ads_played:
+                print(sponsors[ads])
+                print("\n\n\n")
+                ads_played.append(ads)
+adcounter = 9
+display_ads(adcounter)
+'''
+nord = 1
+pie = 1
+honey = 1
+temu = 1
+raid = 1
+world = 1
+war = 1
+corn = 1
+'''
