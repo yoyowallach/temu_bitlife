@@ -182,12 +182,10 @@ def display_ads(adcounter):
     ads_played = []
     if adcounter >= 9:
         print("Loop 1")
-        # Convert sponsors dictionary keys to a list
         sponsor_keys = list(sponsors.keys())
         for i in range(min(adcounter, len(sponsor_keys))):
             if len(ads_played) >= 8:
                 ads_played = []
-            
             sponsor_key = sponsor_keys[i % len(sponsor_keys)]
             if sponsor_key not in ads_played:
                 print(sponsors[sponsor_key])
