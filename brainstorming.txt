@@ -1,0 +1,12 @@
+friends
+ads
+die
+school
+ - skip class
+ - study more
+ - test
+ - drop out
+work
+ - work harder
+ - retire
+ - ask for promo

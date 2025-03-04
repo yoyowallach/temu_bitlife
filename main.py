@@ -181,11 +181,8 @@ def friend_request(person, adcounter):
 def display_ads(adcounter):
     ads_played = []
     sponsor_keys = list(sponsors.keys())
-    
     ads_to_display = adcounter
-    
     ads_displayed = 0
-    
     while ads_displayed < ads_to_display:
         if len(ads_played) >= len(sponsor_keys):
             ads_played = []        
@@ -195,18 +192,7 @@ def display_ads(adcounter):
             print(f"AD {ads_displayed + 1}/{ads_to_display}:")
             print(sponsors[sponsor_key])
             print("\n\n")
-            
             ads_played.append(sponsor_key)
             ads_displayed += 1
 adcounter = 9
 display_ads(adcounter)
-'''
-nord = 1
-pie = 1
-honey = 1
-temu = 1
-raid = 1
-world = 1
-war = 1
-corn = 1
-'''
