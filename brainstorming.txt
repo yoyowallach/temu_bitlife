@@ -6,7 +6,22 @@ school
  - study more
  - test
  - drop out
+
 work
  - work harder
  - retire
  - ask for promo
+
+cars
+ - buy
+ - sell
+ - gift
+ - upgrade
+ - licence
+
+properties
+ - buy
+ - sell
+ - gift
+ - upgrade
+ - rent system (low priority)

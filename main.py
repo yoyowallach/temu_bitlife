@@ -51,6 +51,7 @@ class Person:
         self.country = country
         self.job = job
         self.job_title, self.salary = self.job.positions[posnumber-1]
+        self.carlisence = False
     def age(self):
         self.age += 1
         Mother.age += 1
@@ -69,6 +70,23 @@ class Person:
             newjobinfo = self.job.positions[posnumber-1]
             self.job_title, self.salary = newjobinfo
             print("promo completed")
+
+class Car:
+    def __init__(self, name, price, owner, condition, age, model):
+        self.name = name
+        self.price = price
+        self.owner = owner
+        self.condition = condition
+        self.age = age
+        self.model = model
+    def buy(self, buyer):
+        if buyer.money >= self.price:
+            buyer.money -= self.price
+            buyer.carlisence = True
+            print(f"{buyer.fn} bought a {self.name} for ${self.price}!")
+        else:
+            print(f"{buyer.fn} doesn't have enough money to buy a {self.name}!")
+    def sell(self, seller):
 
 class peoplenif:
     def __init__(self, fn, ln, age, money, job, posnumber, relation):
