@@ -5,20 +5,39 @@ import random
 from Resources.data_structures import BN, GN, LN, sponsors, basicjobs, jobless, joblessK
 from Resources.classes import Person, Brotherwhoisnotalive, Car, Job, peoplenil
 
+# -------------------------------------------------------
 
-def display_message_with_buttons(message, item_list):
-    root = tk.Tk()
-    root.title("Message with Buttons")
-    message_box = tk.Text(root, height=5, width=40)
-    message_box.pack(pady=10)
-    message_box.insert(tk.END, message)
-    message_box.config(state=tk.DISABLED)
-    def on_button_click(item):
-        print(f"Button {item} clicked!")
-    for item in item_list:
-        button = tk.Button(root, text=item, command=lambda item=item: on_button_click(item))
-        button.pack(pady=5)
-    root.mainloop()
+def display_message_with_buttons(entry):
+    if isinstance(entry, tuple) and len(entry) == 2:
+        message, choices = entry
+        root = tk.Tk()
+        root.title("Message with Buttons")
+
+        message_box = tk.Text(root, height=5, width=40)
+        message_box.pack(pady=10)
+        message_box.insert(tk.END, message)
+        message_box.config(state=tk.DISABLED)
+
+        def on_button_click(choice):
+            print(f"Button {choice[0]} clicked!")
+            exec(choice[1])
+            root.quit()
+
+        for choice in choices:
+            if isinstance(choice, tuple) and len(choice) == 2:
+                button = tk.Button(root, text=choice[0], command=lambda choice=choice: on_button_click(choice))
+                button.pack(pady=5)
+
+        root.mainloop()
+    else:
+        print("Invalid input format. Ensure it is a tuple with [message, choices].")
+
+# dic = {
+#     1: ("Question", [
+#         ("Option", "Code"),
+#         ("Option", "Code")
+#     ])
+# }
 
 # -------------------------------------------------------
 
@@ -80,3 +99,18 @@ def generate_family(name, lastname, city, gender):
 
 global jobposnumbers
 jobposnumbers = [1, 1, 1, 1, 2, 2, 2, 3, 3, 4]
+
+# -------------------------------------------------------
+
+def display_message(message):
+    root = tk.Tk()
+    root.title("Message")
+    message_box = tk.Text(root, height=5, width=40)
+    message_box.pack(pady=10)
+    message_box.insert(tk.END, message)
+    message_box.config(state=tk.DISABLED)
+    def close_window():
+        root.quit()
+    ok_button = tk.Button(root, text="OK", command=close_window)
+    ok_button.pack(pady=5)
+    root.mainloop()
