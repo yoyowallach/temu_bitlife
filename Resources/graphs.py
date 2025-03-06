@@ -1,76 +1,45 @@
 # graphs.py
 
-
 import tkinter as tk
 
+
 class EventNode:
-  def __init__(self, key, message, options, optioncode):
-      self.key = key
-      self.message = message
-      self.options = options
-      self.optioncode = optioncode
+  def __init__(self, key, dic):
+    self.key = key
+    self.dic = dic
+  def display_message_with_buttons(self, entry):
+    if isinstance(entry, tuple) and len(entry) == 2:
+      message, choices = entry
+      root = tk.Tk()
+      root.title("Message with Buttons")
 
+      message_box = tk.Text(root, height=5, width=40)
+      message_box.pack(pady=10)
+      message_box.insert(tk.END, message)
+      message_box.config(state=tk.DISABLED)
+
+      def on_button_click(choice):
+        exec(choice[1])
+        root.destroy()
+
+      for choice in choices:
+        if isinstance(choice, tuple) and len(choice) == 2:
+          button = tk.Button(root, text=choice[0], command=lambda choice=choice: on_button_click(choice))
+          button.pack(pady=5)
+          
+      root.mainloop()
+    else:
+        print("Invalid input format. Ensure it is a tuple with [message, choices].")
   def __str__(self):
-    root = tk.Tk()
-    root.title("Event")
+    self.display_message_with_buttons(self.dic[1])
+    return ""
+o1 = {
+  1: ("You find a toy", [
+    ("Take it", "print('took it')"),
+    ("throw it away", "print('throwed it')")
+  ])
+}
 
-    message_box = tk.Text(root, height=5, width=40)
-    message_box.pack(pady=10)
-    message_box.insert(tk.END, self.message)
-    message_box.config(state=tk.DISABLED)
+option1 = EventNode("Toy", o1)
 
-    output_box = tk.Text(root, height=5, width=40)
-    output_box.pack(pady=10)
-    output_box.config(state=tk.DISABLED)
-
-    def on_button_click(index):
-        try:
-            # Capture print output
-            import io
-            import sys
-            old_stdout = sys.stdout
-            redirected_output = io.StringIO()
-            sys.stdout = redirected_output
-            
-            # Execute the code
-            local_scope = {}
-            exec(self.optioncode[index], {}, local_scope)
-            
-            # Restore stdout
-            sys.stdout = old_stdout
-            
-            # Get captured output
-            captured_output = redirected_output.getvalue()
-            
-            # Display in output box
-            output_box.config(state=tk.NORMAL)
-            output_box.delete(1.0, tk.END)
-            if captured_output:
-                output_box.insert(tk.END, captured_output)
-            else:
-                output_box.insert(tk.END, str(local_scope.get("output", "Executed")))
-            output_box.config(state=tk.DISABLED)
-            
-            root.destroy()  # Close the window after execution
-        except Exception as e:
-            output_box.config(state=tk.NORMAL)
-            output_box.delete(1.0, tk.END)
-            output_box.insert(tk.END, f"Error: {e}\n")
-            output_box.config(state=tk.DISABLED)
-
-    for i, option in enumerate(self.options):
-        button = tk.Button(root, text=option, command=lambda i=i: on_button_click(i))
-        button.pack(pady=5)
-
-    root.mainloop()
-    return ""  # To satisfy __str__ return requirement
-
-option1 = EventNode("ToyEvent" ,"You find a toy", ["You keep the toy", "You throw the toy away"], ["""
-print("Hi")
-for i in range(10):
-  print(i+12)
-""", """
-vars = 10
-print(vars)
-"""])
 print(option1)
