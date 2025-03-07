@@ -28,3 +28,20 @@ for i in range(0, 30):
 
 # -------------------------------------------------------
 
+class EventNode:
+  def __init__(self, key, dic):
+    self.key = key
+    self.dic = dic
+    self.neighbors = []
+  def add_neighbor(self, node):
+    self.neighbors.append(node)
+  def display_choices(self):
+    print("\n\n")
+    print(self.dic[])
+
+dic = {
+  "Main Message" : [
+    ("Question Text", "Code"),
+    ("Question Text", "Code")
+  ]
+}

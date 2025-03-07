@@ -97,7 +97,7 @@ class EventNode:
   def __init__(self, key, dic):
     self.key = key
     self.dic = dic
-    self.neighbors
+    self.neighbors = []
   def display_message_with_buttons(self, entry):
     if isinstance(entry, tuple) and len(entry) == 2:
       message, choices = entry
@@ -162,5 +162,7 @@ class Graph:
   def add_edge(self, node1, node2):
     if node1.key in self.graph and node2.key in self.graph:
       node1.add_neighbor(node2)
+    else:
+      print("One of the nodes does not exist in the graph.\n Error 001.")
 
 # -------------------------------------------------------
