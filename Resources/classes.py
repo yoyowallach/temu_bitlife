@@ -90,3 +90,77 @@ class peoplenil:
           newjobinfo = self.job.positions[posnumber]
           self.job_title, self.salary = newjobinfo
           print("promo completed")
+
+# -------------------------------------------------------
+
+class EventNode:
+  def __init__(self, key, dic):
+    self.key = key
+    self.dic = dic
+    self.neighbors
+  def display_message_with_buttons(self, entry):
+    if isinstance(entry, tuple) and len(entry) == 2:
+      message, choices = entry
+      root = tk.Tk()
+      root.title("Message with Buttons")
+
+      message_box = tk.Text(root, height=5, width=40)
+      message_box.pack(pady=10)
+      message_box.insert(tk.END, message)
+      message_box.config(state=tk.DISABLED)
+
+      def on_button_click(choice):
+        exec(choice[1])
+        root.destroy()
+
+      for choice in choices:
+        if isinstance(choice, tuple) and len(choice) == 2:
+          button = tk.Button(root, text=choice[0], command=lambda choice=choice: on_button_click(choice))
+          button.pack(pady=5)
+
+      root.mainloop()
+    else:
+        print("Invalid input format. Ensure it is a tuple with [message, choices].")
+  def __str__(self):
+    self.display_message_with_buttons(self.dic[1])
+    return ""
+
+# -------------------------------------------------------
+
+class AgeNode:
+  def __init__(self, key):
+    self.key = key
+    self.neighbors = []
+  def add_neighbor(self, node):
+    self.neighbors.append(node)
+
+# -------------------------------------------------------
+
+class MainMenu:
+  def __init__(self, key):
+    self.key = key
+    self.neighbors = []
+  def add_neighbor(self, node):
+    self.neighbors.append(node)
+
+# -------------------------------------------------------
+
+class EventCategory:
+  def __init__(self, key):
+    self.key = key
+    self.neighbors = []
+  def add_neighbor(self, node):
+    self.neighbors.append(node)
+
+# -------------------------------------------------------
+
+class Graph:
+  def __init__(self):
+    self.graph = {}
+  def add_node(self, node):
+    self.graph[node.key] = node
+  def add_edge(self, node1, node2):
+    if node1.key in self.graph and node2.key in self.graph:
+      node1.add_neighbor(node2)
+
+# -------------------------------------------------------

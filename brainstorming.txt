@@ -1,27 +1,56 @@
-friends
-ads
-die
-school
- - skip class
- - study more
- - test
- - drop out
-
-work
- - work harder
- - retire
- - ask for promo
-
-cars
- - buy
- - sell
- - gift
- - upgrade
- - licence
-
-properties
- - buy
- - sell
- - gift
- - upgrade
- - rent system (low priority)
+Assets:
+ - Finances (Display msg)
+ - View properties
+  - List of houses
+ - List of cars, airplanes, and boats
+ - List of possestions
+Relationships:
+ - Parents
+ - Siblings
+ - Children
+ - Nieces & Nephews
+ - Exes
+ - Dead people/pets
+Activities
+ - Crime (Event Category)
+  - GTA (Event Node) (17)
+  - Hitman (Event Node) (18)
+  - Murder (Event Node) (18)
+  - Pickpocket (Event Node) (10)
+  - Porch Pirate (Event Node) (12)
+  - Shoplifting (Event Node) (8)
+  - Mischief (Event Node) (4)
+  - Embezzle (Event Node) (Job)
+ - Doctor (Event Category)
+  - Western Medicine (Event Node) (0)
+ - Emigrate (Event Node) (18)
+ - Gamble (Event Category) (18)
+  - Blackjack (Event Node) (18)
+  - Craps (Event Node) (18)
+  - Keno (Event Node) (18)
+ - Licenses (Event Category)
+  - Boating Lisence (Event Node) (21)
+  - Drivers Lisence (Event Node) (16)
+  - Pilot School (Event Node) (17)
+  - Pilots Test (Event Node) (17)
+ - Lottery (Event Node) (18)
+ - Love (Event Category) (15)
+  - Celeb dating app (Event Node) (15)
+  - Date (Event Node (15)
+  - Dating App (Event Node) (15)
+ - Movies (Event Category) (12)
+  - Comedy (Event Node) (12)
+  - Documentary (Event Node) (12)
+ - Pet (4) (Event Category)
+  - Animal Shelter (Event Node) (4)
+  - Pet Store (Event Node) (4)
+ - Vacation (Event Category) (18)
+  - Go on a vacation (Event Node) (18)
+  - Go on a cruise (Event Node) (18)
+ - Social Media (Event Category) (13)
+  - Tik Took (Event Node) (13)
+  - Twooter (Event Node) (13)
+  - Instogram (Event Node) (13)
+  - Face of Books (Event Node) (13)
+  - Discowd (Event Node) (13)
+  - Youlube (Event Node) (13)

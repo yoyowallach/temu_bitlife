@@ -3,5 +3,5 @@
 
 # import packages
 
-from Resources.functions import generate_family, display_message_with_buttons, display_message
+from Resources.functions import generate_family
 Mother, Father, Sister, You, Brother = generate_family("Yotam", "Wallach", "Albany", "M")
