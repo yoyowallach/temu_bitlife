@@ -98,31 +98,21 @@ class EventNode:
     self.key = key
     self.dic = dic
     self.neighbors = []
-  def display_message_with_buttons(self, entry):
-    if isinstance(entry, tuple) and len(entry) == 2:
-      message, choices = entry
-      root = tk.Tk()
-      root.title("Message with Buttons")
-
-      message_box = tk.Text(root, height=5, width=40)
-      message_box.pack(pady=10)
-      message_box.insert(tk.END, message)
-      message_box.config(state=tk.DISABLED)
-
-      def on_button_click(choice):
-        exec(choice[1])
-        root.destroy()
-
-      for choice in choices:
-        if isinstance(choice, tuple) and len(choice) == 2:
-          button = tk.Button(root, text=choice[0], command=lambda choice=choice: on_button_click(choice))
-          button.pack(pady=5)
-
-      root.mainloop()
-    else:
-        print("Invalid input format. Ensure it is a tuple with [message, choices].")
+  def add_neighbor(self, node):
+    self.neighbors.append(node)
+  def display_choices(self):
+    counter = 1
+    print("\n\n")
+    for item in self.dic:
+      print(item)
+      print("\nOptions:")
+      for items in self.dic[item]:
+        print(f"Option number {counter}: {items[0]}")
+        counter += 1
+    choice = int(input("\n\nWhat do you want to do? (Enter the number of the option)\n"))
+    exec(self.dic[item][choice-1][1])
   def __str__(self):
-    self.display_message_with_buttons(self.dic[1])
+    self.display_choices()
     return ""
 
 # -------------------------------------------------------

@@ -33,10 +33,11 @@ def display_message_with_buttons(entry):
         print("Invalid input format. Ensure it is a tuple with [message, choices].")
 
 # dic = {
-#     1: ("Question", [
-#         ("Option", "Code"),
-#         ("Option", "Code")
-#     ])
+#   "Main Message" : [
+#     ("Question Text", "print('Hello world!')"),
+#     ("Question Text", "print('Option 2')"),
+#     ("Question Text", "print('Option 3')")
+#   ]
 # }
 
 # -------------------------------------------------------
