@@ -25,10 +25,9 @@
    - Option 1: Embrace the training eagerly
    - Option 2: Resist stubbornly
 
-2. **Terrible Twos Tantrum**
+2. **Your parents say no to going to Micdonalds**
    - Option 1: Scream until you get what you want
    - Option 2: Calm down quickly
-   - Option 3: Throw toys across the room
 
 ## Age 3 (1 approved, 2 denied.)
 1. **First Day of Preschool**

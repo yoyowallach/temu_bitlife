@@ -1,5 +1,7 @@
 # classes.py
 
+from main import Mother, Father, Sister, You, Brother
+from data_structures import BN, GN, basicjobs 
 
 class Job:
   def __init__(self, name, salary, company, position, positions):
@@ -166,6 +168,7 @@ class EventCategory:
 class Graph:
   def __init__(self):
     self.graph = {}
+    self.agenodes = {}
   def add_node(self, node):
     self.graph[node.key] = node
   def add_edge(self, node1, node2):
@@ -175,4 +178,6 @@ class Graph:
       print("One of the nodes does not exist in the graph.\n Error 001.")
   def find_node_by_age(self, age):
     for node in self.graph:
+      if node.key == age:
+        return node
 # -------------------------------------------------------

@@ -1,6 +1,7 @@
 # graphs.py
 
 import tkinter as tk
+from classes import Graph, EventNode, AgeNode, MainMenu, EventCategory
 
 G = Graph()
 
@@ -8,6 +9,7 @@ G = Graph()
 
 for i in range(0, 30):
   AgeRoot = AgeNode(i)
+  G.agenodes.add(AgeRoot)
   Occupation = MainMenu("Occupation")
   G.add_node(Occupation)
   Assets = MainMenu("Assets")
@@ -24,3 +26,5 @@ for i in range(0, 30):
   
 # -------------------------------------------------------
 
+for node in G.agenodes:
+  if node.key 
