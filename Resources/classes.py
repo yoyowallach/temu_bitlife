@@ -19,7 +19,7 @@ class Brotherwhoisnotalive:
 # -------------------------------------------------------
 
 class Person:
-  def __init__(self, fn, ln, age, relation, gender, city, country, job, posnumber, money):
+  def __init__(self, fn, ln, age, relation, gender, city, country, job, posnumber, money, relationstatus):
       self.fn = fn
       self.ln = ln
       self.age = age
@@ -31,6 +31,14 @@ class Person:
       self.job_title, self.salary = self.job.positions[posnumber-1]
       self.carlisence = False
       self.possessions = []
+      self.money = money
+      self.health = 100
+      self.happiness = 100
+      self.smarts = 100
+      self.looks = 100
+      if self.relation == "You":
+        self.relationstatus = 100
+      self.relationstatus = relationstatus
   def ageyear(self):
       self.age += 1
       Mother.age += 1
@@ -102,7 +110,7 @@ class EventNode:
     self.neighbors.append(node)
   def display_choices(self):
     counter = 1
-    print("\n\n")
+    print("\n")
     for item in self.dic:
       print(item)
       print("\nOptions:")
@@ -165,5 +173,6 @@ class Graph:
       node1.add_neighbor(node2)
     else:
       print("One of the nodes does not exist in the graph.\n Error 001.")
-
+  def find_node_by_age(self, age):
+    for node in self.graph:
 # -------------------------------------------------------

@@ -11,16 +11,14 @@
    - Option 2: Hold onto furniture for support
    - Option 3: Crawl instead
 
-## Age 1 (Both denied)
-1. **First Birthday Party**
-   - Option 1: Smash your cake enthusiastically
-   - Option 2: Cry from all the attention
-   - Option 3: Fall asleep during the party
+## Age 1 (Approved)
+1. **First Time at the Zoo**
+   - Option 1: Point excitedly at the animals
+   - Option 2: Cry because the animals are scary
 
-2. **New Toy**
-   - Option 1: Play with it constantly
-   - Option 2: Ignore it and play with the box instead
-   - Option 3: Break it immediately
+2. **Learning to Feed Yourself**
+   - Option 1: Use the spoon
+   - Option 2: Throw food on the floor
 
 ## Age 2 (Both approved)
 1. **Potty Training**

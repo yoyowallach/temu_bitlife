@@ -86,13 +86,13 @@ def friend_request(person, adcounter):
 def generate_family(name, lastname, city, gender):
     momname = random.choice(GN)
     GN.remove(momname)
-    Mother = Person(momname, lastname, random.randint(21, 51), "Mother", "F", city, "United States", random.choice(basicjobs), random.choice(jobposnumbers), random.randint(1257, 10000000))
+    Mother = Person(momname, lastname, random.randint(21, 51), "Mother", "F", city, "United States", random.choice(basicjobs), random.choice(jobposnumbers), random.randint(1257, 10000000), 100)
     dadname = random.choice(BN)
-    Father = Person(dadname, lastname, random.randint(21, 51), "Father", "M", city, "United States",random.choice(basicjobs), random.choice(jobposnumbers), random.randint(1257, 10000000))
+    Father = Person(dadname, lastname, random.randint(21, 51), "Father", "M", city, "United States",random.choice(basicjobs), random.choice(jobposnumbers), random.randint(1257, 10000000), 100)
     sisname = random.choice(GN)
     GN.remove(sisname)
-    Sister = Person(sisname, lastname, 3, "Sister", "F", city, "United States", joblessK, 1, 500)
-    You = Person(name, lastname, 0, "You", gender, city, "United States", joblessK, 1, 0)
+    Sister = Person(sisname, lastname, 3, "Sister", "F", city, "United States", joblessK, 1, 500, 100)
+    You = Person(name, lastname, 0, "You", gender, city, "United States", joblessK, 1, 0, 100)
     Brother = Brotherwhoisnotalive()
     return(Mother, Father, Sister, You, Brother)
 
