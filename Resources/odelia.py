@@ -1,7 +1,7 @@
 # odelia.py
 
 
-from Resources.classes import EventNode
+from .classes import EventNode
 
 '''
 1. Copy the template
