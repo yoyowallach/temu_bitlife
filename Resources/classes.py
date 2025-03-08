@@ -109,11 +109,22 @@ class EventNode:
       for items in self.dic[item]:
         print(f"Option number {counter}: {items[0]}")
         counter += 1
-    choice = int(input("\n\nWhat do you want to do? (Enter the number of the option)\n"))
+    choice = int(input("\n\nWhat do you want to do? (Enter the number of the option)\n "))
+    while choice > len(self.dic[item]):
+      choice = int(input("\n\nWhat do you want to do? (Enter the number of the option)\n "))
+    print("\n")
     exec(self.dic[item][choice-1][1])
   def __str__(self):
     self.display_choices()
     return ""
+
+# dic = {
+#   "Main Message" : [
+#     ("Question Text", "print('Hello world!')"),
+#     ("Question Text", "print('Option 2')"),
+#     ("Question Text", "print('Option 3')")
+#   ]
+# }
 
 # -------------------------------------------------------
 
