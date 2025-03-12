@@ -41,6 +41,7 @@ class Person:
       if self.relation == "You":
         self.relationstatus = 100
       self.relationstatus = relationstatus
+      self.sickness = []
   def ageyear(self):
       self.age += 1
       Mother.age += 1
@@ -176,7 +177,7 @@ class Graph:
       node1.add_neighbor(node2)
     else:
       print("One of the nodes does not exist in the graph.\n Error 001.")
-  def find_node_by_age(self, age):
+  def find_node_by_key(self, age):
     for node in self.graph:
       if node.key == age:
         return node

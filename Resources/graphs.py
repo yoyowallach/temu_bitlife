@@ -7,16 +7,16 @@ G = Graph()
 
 # -------------------------------------------------------
 
+Activiies = MainMenu("Activiies")
 for i in range(0, 30):
   AgeRoot = AgeNode(i)
   G.agenodes.add(AgeRoot)
-  Occupation = MainMenu("Occupation")
+  Occupation = MainMenu(f"Occupation{i}")
   G.add_node(Occupation)
-  Assets = MainMenu("Assets")
+  Assets = MainMenu(f"Assets{i}")
   G.add_node(Assets)
-  Relationships = MainMenu("Relationships")
+  Relationships = MainMenu(f"Relationships{i}")
   G.add_node(Relationships)
-  Activiies = MainMenu("Activiies")
   G.add_node(Activiies)
   G.add_node(AgeRoot)
   G.add_edge(AgeRoot, Occupation)
@@ -28,7 +28,7 @@ for i in range(0, 30):
 
 
 for node in G.agenodes:
-  if node.key == 4:
-    crime = EventCategory("Crime")
-    G.add_node(crime)
-    G.add_edge(node, crime)
+  if node.key == 0:
+    doctor = EventCategory("Doctor")
+    G.add_node(doctor)
+    G.add_edge(Activiies, doctor)
