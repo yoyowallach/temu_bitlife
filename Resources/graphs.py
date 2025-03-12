@@ -26,5 +26,9 @@ for i in range(0, 30):
   
 # -------------------------------------------------------
 
+
 for node in G.agenodes:
-  if node.key 
+  if node.key == 4:
+    crime = EventCategory("Crime")
+    G.add_node(crime)
+    G.add_edge(node, crime)

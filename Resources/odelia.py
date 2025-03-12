@@ -82,3 +82,11 @@ two2 = EventNode("two2", {
                 })
 
 # -------------------------------------------------------
+
+dic = {
+  "Message" : [
+    ("Option 1", "print('Option 1')"),
+    ("Option 2", "print('Option 2')")
+  ]
+}
+
