@@ -35,10 +35,9 @@
    - Option 2: Make friends immediately
    - Option 3: Hide behind the teacher
 
-2. **New Sibling Born**
-   - Option 1: Show curiosity and affection
-   - Option 2: Act jealous and seek attention
-   - Option 3: Pretend the baby doesn't exist
+2. **Your Ice Cream Fell On The Floor**
+   - Option 1: Cry
+   - Option 2: Ask for a new cone
 
 ## Age 4 (Both approved)
 1. **Imaginary Friend**
