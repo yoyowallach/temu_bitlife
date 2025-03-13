@@ -1,7 +1,7 @@
 # graphs.py
 
 import tkinter as tk
-from classes import Graph, EventNode, AgeNode, MainMenu, EventCategory
+from Resources.classes import Graph, EventNode, AgeNode, MainMenu, EventCategory
 
 G = Graph()
 

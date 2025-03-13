@@ -84,9 +84,22 @@ two2 = EventNode("two2", {
 # -------------------------------------------------------
 
 dic = {
-  "Message" : [
-    ("Option 1", "print('Option 1')"),
-    ("Option 2", "print('Option 2')")
+  "Your Ice Cream Fell On The Floor" : [
+    ("Cry", "print('Option 1')"), # -5 relaition with mom and dad
+    ("Ask for a new cone", "print('Option 2')") # +5 hapiness
+  ]
+}
+three1 = EventNode("three1", {
+                    "Your Ice Cream Fell On The Floor" : [
+                      ("Cry", "print('Option 1')"), # -5 relaition with mom and dad
+                      ("Ask for a new cone", "print('Option 2')") # +5 hapiness
+                    ]
+                  })
+
+dic = {
+  "First Day of Preschool" : [
+    ("Cry when parents leave", "print('Option 1')"), # -5 hapiness
+    ("Make friends immediately", "print('Option 2')") # +5 hapiness
   ]
 }
 

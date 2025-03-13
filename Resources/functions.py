@@ -2,8 +2,8 @@
 
 import tkinter as tk
 import random
-from Resources.data_structures import BN, GN, LN, sponsors, basicjobs, jobless, joblessK
-from Resources.classes import Person, Brotherwhoisnotalive, Car, Job, peoplenil
+from Resources.data_structures import BN, GN, LN, sponsors
+from Resources.classes import Person, Brotherwhoisnotalive, basicjobs, joblessK
 
 # -------------------------------------------------------
 
@@ -42,22 +42,22 @@ def display_message_with_buttons(entry):
 
 # -------------------------------------------------------
 
-def display_ads(adcounter):
-    ads_played = []
-    sponsor_keys = list(sponsors.keys())
-    ads_to_display = adcounter
-    ads_displayed = 0
-    while ads_displayed < ads_to_display:
-        if len(ads_played) >= len(sponsor_keys):
-            ads_played = []        
-        available_sponsors = [key for key in sponsor_keys if key not in ads_played]
-        if available_sponsors:
-            sponsor_key = random.choice(available_sponsors)
-            print(f"AD {ads_displayed + 1}/{ads_to_display}:")
-            print(sponsors[sponsor_key])
-            print("\n\n")
-            ads_played.append(sponsor_key)
-            ads_displayed += 1
+# def display_ads(adcounter):
+#     ads_played = []
+#     sponsor_keys = list(sponsors.keys())
+#     ads_to_display = adcounter
+#     ads_displayed = 0
+#     while ads_displayed < ads_to_display:
+#         if len(ads_played) >= len(sponsor_keys):
+#             ads_played = []        
+#         available_sponsors = [key for key in sponsor_keys if key not in ads_played]
+#         if available_sponsors:
+#             sponsor_key = random.choice(available_sponsors)
+#             print(f"AD {ads_displayed + 1}/{ads_to_display}:")
+#             print(sponsors[sponsor_key])
+#             print("\n\n")
+#             ads_played.append(sponsor_key)
+#             ads_displayed += 1
 
 # -------------------------------------------------------
 

@@ -33,7 +33,6 @@
 1. **First Day of Preschool**
    - Option 1: Cry when parents leave
    - Option 2: Make friends immediately
-   - Option 3: Hide behind the teacher
 
 2. **Your Ice Cream Fell On The Floor**
    - Option 1: Cry

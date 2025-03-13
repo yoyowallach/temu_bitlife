@@ -1,6 +1,5 @@
 # data_structures.py
 
-from Resources.classes import Job
 
 BN = [
     "James", "John", "Michael", "David", "Daniel", "Matthew", "Ethan", "Joshua", 
@@ -50,12 +49,3 @@ sponsors["Beijing Corn"] = "Nice corn, it tasts so good. You think it is made in
 sponsors["OperaGX"] = "Ever wanted to be a pro gamer? Well dont be a noob, be a pro!!!!1!1111!!111!1!! Flex on all your friends! Scratch that, you dont have any friends! Use code TEMUBITLIFE to get a FREE week of OperaGX ultra which includes the benefits of 1 free nothing! What are you waiting for? Go to operagx.com/temubitlife to get it now!"
 
 # -------------------------------------------------------
-
-doctor = Job("Doctor", 110000, "Bob Hospitals, Inc", "Junior Doctor", [("Junior Doctor", 110000) ,("Doctor", 120000), ("Senior Doctor", 140000), ("Head Doctor", 170000)])
-lawyer = Job("Lawyer", 90000, "Bob, Joe & Fred", "Junior Attorney", [("Junior Attorney", 90000), ("Attorney", 110000), ("Senior Attorney", 130000), ("Head Attorney", 160000)])
-engineer = Job("Engineer", 80000, "Bob Construction, Inc", "Junior Engineer", [("Junior Engineer", 80000), ("Engineer", 90000), ("Head Engineer", 120000), ("Head Engineer", 150000)])
-teacher = Job("Teacher", 63000, "Bob Elementaty School", "Kindergarten Teacher", [("Kindergarten Teacher", 63000), ("First Grade Teacher", 68000), ("Second Grade Teacher", 73000), ("Third Grade Teacher", 78000), ("Fourth Grade Teacher", 83000), ("Fifth Grade Teacher", 88000), ("Vice Princical", 98000), ("Principal", 5)])
-jobless = Job("Jobless", 10000, "Nobody", "NA", [("Jobless", 10000)])
-storeworker = Job("Storeworker", 28000, "Bob Grocery", "Junior Cashier", [("Junior Cashier", 28000), ("Cahier", 38000), ("Senior Cashier", 45000), ("Head Cashier", 50000)])
-joblessK = Job("Jobless", 0, "NA", "NA", [("NA", 0)])
-basicjobs = [doctor, lawyer, engineer, teacher, storeworker]
