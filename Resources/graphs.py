@@ -2,6 +2,8 @@
 
 import tkinter as tk
 from Resources.classes import Graph, EventNode, AgeNode, MainMenu, EventCategory
+import random
+from main import Mother, Father, Sister, You, Brother
 
 G = Graph()
 
@@ -26,9 +28,61 @@ for i in range(0, 30):
   
 # -------------------------------------------------------
 
+'''
+dic = {
+  "Message" : [
+    ("Option 1", "print('Option 1')"),
+    ("Option 2", "print('Option 2')")
+  ]
+}
+'''
 
 for node in G.agenodes:
   if node.key == 0:
     doctor = EventCategory("Doctor")
     G.add_node(doctor)
     G.add_edge(Activiies, doctor)
+    dic = {
+      "Which doctor do you want to go to? It costs $100 for a visit." : [
+        ("Go to Dr. Larry", '''
+if You.money >= 100:
+  You.money -= 100
+  if len(You.sickness) > 0:
+    if random.randint(1, 4) == 1:
+      print('Dr. Larry tried treating you but he failed')
+    else:
+      print('Dr. Larry treated you')
+      You.sickness.pop()
+  else:
+    print('You don't have any sickness.')
+        '''),
+        ("Go to Dr. Bob", '''
+if You.money >= 100:
+  You.money -= 100
+  if len(You.sickness) > 0:
+    if random.randint(1, 8) == 1:
+      print('Dr. Bob tried treating you but he failed')
+    else:
+      print('Dr. Bob treated you')
+      You.sickness.pop()
+  else:
+    print('You dont have any sickness.')
+        '''),
+        ("Im not sick!", "print('You decided that you are not sick.')")
+      ]
+    }
+    western = EventNode("Western Medicine", dic)
+    G.add_node(western)
+    G.add_edge(doctor, western)
+  if node.key == 4:
+    pet = EventCategory("Pet")
+    G.add_node(pet)
+    G.add_edge(Activiies, pet)
+    dic = {
+      "You went to the animal shelter. It costs $175 for a cat or a dog." : [
+        ("Get a boy cat", "print('Option 1')"),
+        ("Get a girl cat 2", "print('Option 2')"),
+        ("Get a boy dog", "print('Option 1')"),
+        ("Get a girl dog", "print('Option 1')")
+      ]
+    }
