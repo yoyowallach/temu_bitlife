@@ -1,7 +1,8 @@
 # classes.py
 
 from main import Mother, Father, Sister, You, Brother
-from data_structures import BN, GN, basicjobs 
+from data_structures import BN, GN, basicjobs
+import random
 
 class Job:
   def __init__(self, name, salary, company, position, positions):
@@ -42,6 +43,7 @@ class Person:
         self.relationstatus = 100
       self.relationstatus = relationstatus
       self.sickness = []
+      self.pets = []
   def ageyear(self):
       self.age += 1
       Mother.age += 1
@@ -105,8 +107,41 @@ class peoplenil:
 # -------------------------------------------------------
 
 class Cat:
-
+  def __init__(self, name, age, gender, owner):
+    self.name = name
+    self.age = age
+    self.gender = gender
+    self.owner = owner
+    self.happiness = random.randint(50, 100)
+    self.health = random.randint(20, 100)
+    self.smarts = random.randint(3, 100)
+    self.energy = random.randint(1, 100)
 # -------------------------------------------------------
+
+class Dog:
+  def __init__(self, name, age, gender, owner):
+    self.name = name
+    self.age = age
+    self.gender = gender
+    self.owner = owner
+    self.happiness = random.randint(50, 100)
+    self.health = random.randint(20, 100)
+    self.smarts = random.randint(3, 100)
+    self.energy = random.randint(1, 100)
+    self.tricks = []
+    self.possible_tricks = ["Roll over", "Sit", "Beg", "Play dead", "Fetch", "Shake hand"]
+  def learn_trick(self, trick):
+    trickPercents = {
+      "Roll over" : 70,
+      "Sit" : 95,
+      "Beg" : 50,
+      "Play dead" : 30,
+      "Fetch" : 80,
+      "Shake hand" : 35,
+    }
+    for item.key in trickPercents:
+      print()
+    
 
 class EventNode:
   def __init__(self, key, dic):

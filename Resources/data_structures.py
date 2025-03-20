@@ -49,3 +49,7 @@ sponsors["Beijing Corn"] = "Nice corn, it tasts so good. You think it is made in
 sponsors["OperaGX"] = "Ever wanted to be a pro gamer? Well dont be a noob, be a pro!!!!1!1111!!111!1!! Flex on all your friends! Scratch that, you dont have any friends! Use code TEMUBITLIFE to get a FREE week of OperaGX ultra which includes the benefits of 1 free nothing! What are you waiting for? Go to operagx.com/temubitlife to get it now!"
 
 # -------------------------------------------------------
+
+sickness = ["Diarrhea", "Rabies", "Covid-19", "Flu", "Poison Oak Rash", "Pneumonia", "Chickenpox", "Sprained Pinkie", "Mumps", "Bubonic Plague"]
+
+# -------------------------------------------------------

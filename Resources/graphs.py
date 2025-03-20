@@ -1,7 +1,7 @@
 # graphs.py
 
 import tkinter as tk
-from Resources.classes import Graph, EventNode, AgeNode, MainMenu, EventCategory
+from Resources.classes import Graph, EventNode, AgeNode, MainMenu, EventCategory, Cat, Dog
 import random
 from main import Mother, Father, Sister, You, Brother
 
@@ -51,8 +51,7 @@ if You.money >= 100:
     if random.randint(1, 4) == 1:
       print('Dr. Larry tried treating you but he failed')
     else:
-      print('Dr. Larry treated you')
-      You.sickness.pop()
+      print(f'Dr. Larry treated you for {You.sickness.pop()}')
   else:
     print('You don't have any sickness.')
         '''),
