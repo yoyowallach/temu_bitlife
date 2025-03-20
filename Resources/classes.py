@@ -132,15 +132,19 @@ class Dog:
     self.possible_tricks = ["Roll over", "Sit", "Beg", "Play dead", "Fetch", "Shake hand"]
   def learn_trick(self, trick):
     trickPercents = {
-      "Roll over" : 70,
-      "Sit" : 95,
-      "Beg" : 50,
-      "Play dead" : 30,
-      "Fetch" : 80,
-      "Shake hand" : 35,
+      "Roll over (1)" : 70,
+      "Sit (2)" : 95,
+      "Beg (3)" : 50,
+      "Play dead (4)" : 30,
+      "Fetch (5)" : 80,
+      "Shake hand (6)" : 35,
     }
-    for item.key in trickPercents:
-      print()
+    print("Which trick do you want your dog to learn?")
+    for key in trickPercents:
+      print(key)
+    trick = input("Which number of trick do you want your dog to learn?")
+    # loop over trickPercents and find the trick that matches the input
+    # if the trick is found, make a random int from 1 to 100. If the number is less than the value in the dictonary, then the dog learns the trick.
     
 
 class EventNode:
