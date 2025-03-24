@@ -54,46 +54,15 @@ sickness = ["Diarrhea", "Rabies", "Covid-19", "Flu", "Poison Oak Rash", "Pneumon
 
 # -------------------------------------------------------
 
-boy_cat_names = [
-    "Oliver", "Leo", "Milo", "Charlie", "Simba", "Max", "Tiger", "Shadow", "Rocky", 
-    "Jack", "Smokey", "Oscar", "Felix", "George", "Jasper", "Finn", "Loki", "Ollie", 
-    "Sam", "Tom", "Boots", "Oreo", "Zeus", "Ziggy", "Winston", "Tucker", "Toby", 
-    "Salem", "Romeo", "Pepper", "Murphy", "Luke", "Henry", "Gus", "Ghost", "Felix", 
-    "Duke", "Dexter", "Chester", "Charlie", "Binx", "Bear", "Atlas", "Archie", 
-    "Apollo", "Ace", "Bubba", "Banjo", "Boris", "Bean"
+boy_pet_names = [
+"Oliver", "Leo", "Milo", "Charlie", "Simba", "Max", "Tiger", "Shadow", "Rocky", "Jack", "Smokey", "Oscar", "Felix", "George", "Jasper", "Finn", "Loki", "Ollie", "Sam", "Tom", "Boots", "Oreo", "Zeus", "Ziggy", "Winston", "Tucker", "Toby", "Salem", "Romeo", "Pepper", "Murphy", "Luke", "Henry", "Gus", "Ghost", "Felix", 
+    "Duke", "Dexter", "Chester", "Charlie", "Binx", "Bear", "Atlas", "Archie", "Apollo", "Ace", "Bubba", "Banjo", "Boris", "Bean", "Max", "Charlie", "Buddy", "Rocky", "Bear", "Duke", "Tucker", "Jack", "Oliver", "Leo", "Milo", "Finn", "Zeus", "Winston", "Apollo", "Murphy", "Sam", "Simba", "Bruno", "Scout", "Cooper", "Teddy", "Riley", "Bailey", "Beau", "Blue", "Lucky", "Bentley", "Thor", "Ranger", "Atlas", "Banjo", "Cash", "Chief", "Diesel", "Gunner", "Hunter", "King", "Louie", "Maverick", "Moose", "Orion", "Ozzy", "Remy", "Rocco", "Scout", "Tank", "Toby", "Wolf", "Ziggy"
 ]
 
 # -------------------------------------------------------
 
-girl_cat_names = [
-    "Luna", "Bella", "Lucy", "Lily", "Nala", "Kitty", "Callie", "Chloe", "Sophie", 
-    "Daisy", "Stella", "Molly", "Penny", "Zoe", "Olive", "Mia", "Nova", "Rosie", 
-    "Ruby", "Willow", "Pepper", "Pearl", "Poppy", "Oreo", "Nina", "Millie", "Maya", 
-    "Lola", "Kiki", "June", "Ivy", "iris", "Hazel", "Ginger", "Fiona", "Ellie", 
-    "Echo", "Coco", "Cleo", "Clara", "Birdie", "Angel", "Alice", "Abby", "Zelda", 
-    "Winnie", "Violet", "Trixie", "Sushi", "Storm"
-]
-
-# -------------------------------------------------------
-
-boy_dog_names = [
-    "Max", "Charlie", "Buddy", "Rocky", "Bear", "Duke", "Tucker", "Jack", "Oliver", 
-    "Leo", "Milo", "Finn", "Zeus", "Winston", "Apollo", "Murphy", "Sam", "Simba", 
-    "Bruno", "Scout", "Cooper", "Teddy", "Riley", "Bailey", "Beau", "Blue", "Lucky", 
-    "Bentley", "Thor", "Ranger", "Atlas", "Banjo", "Cash", "Chief", "Diesel", "Gunner", 
-    "Hunter", "King", "Louie", "Maverick", "Moose", "Orion", "Ozzy", "Remy", "Rocco", 
-    "Scout", "Tank", "Toby", "Wolf", "Ziggy"
-]
-
-# -------------------------------------------------------
-
-girl_dog_names = [
-    "Luna", "Bella", "Lucy", "Daisy", "Sadie", "Molly", "Bailey", "Stella", "Maggie", 
-    "Ruby", "Sophie", "Chloe", "Lily", "Lola", "Zoe", "Penny", "Nova", "Rosie", "Nala", 
-    "Willow", "Pepper", "Mia", "Millie", "Hazel", "Ginger", "Ellie", "Coco", "Roxy", 
-    "Gracie", "Winnie", "Piper", "Olive", "Maya", "Kona", "Ivy", "Holly", "Harper", 
-    "Dixie", "Charlie", "Bonnie", "Belle", "Athena", "Abby", "Lady", "Layla", "Leia", 
-    "Callie", "Shadow", "Angel", "Sky"
+girl_pet_names = [
+    "Girlie", "Bella", "Lucy", "Lily", "Nala", "Kitty", "Callie", "Chloe", "Sophie", "Daisy", "Stella", "Molly", "Penny", "Zoe", "Olive", "Mia", "Nova", "Rosie", "Ruby", "Willow", "Pepper", "Pearl", "Poppy", "Oreo", "Nina", "Millie", "Maya", "Lola", "Kiki", "June", "Ivy", "iris", "Hazel", "Ginger", "Fiona", "Ellie", "Echo", "Coco", "Cleo", "Clara", "Birdie", "Angel", "Alice", "Abby", "Zelda", "Winnie", "Violet", "Trixie", "Sushi", "Storm", "Luna", "Bella", "Lucy", "Daisy", "Sadie", "Molly", "Bailey", "Stella", "Maggie", "Ruby", "Sophie", "Chloe", "Lily", "Lola", "Zoe", "Penny", "Nova", "Rosie", "Nala", "Willow", "Pepper", "Mia", "Millie", "Hazel", "Ginger", "Ellie", "Coco", "Roxy", "Gracie", "Winnie", "Piper", "Olive", "Maya", "Kona", "Ivy", "Holly", "Harper", "Dixie", "Charlie", "Bonnie", "Belle", "Athena", "Abby", "Lady", "Layla", "Leia", "Callie", "Shadow", "Angel", "Sky"
 ]
 
 # -------------------------------------------------------
