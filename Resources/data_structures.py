@@ -97,8 +97,3 @@ girl_dog_names = [
 ]
 
 # -------------------------------------------------------
-
-boy_pet_names = list(set(boy_cat_names + boy_dog_names))
-girl_pet_names = list(set(girl_cat_names + girl_dog_names))
-
-# -------------------------------------------------------
