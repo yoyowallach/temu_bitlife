@@ -79,7 +79,7 @@ if You.money >= 100:
     G.add_edge(Activiies, pet)
     dic = {
       "You went to the animal shelter. It costs $175 for a cat or a dog." : [
-        ("Get a boy cat", "print('Option 1')"),
+        ("Get a boy cat", "",
         ("Get a girl cat 2", "print('Option 2')"),
         ("Get a boy dog", "print('Option 1')"),
         ("Get a girl dog", "print('Option 1')")
