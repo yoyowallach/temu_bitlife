@@ -18,6 +18,8 @@ class Brotherwhoisnotalive:
   def __init__(self):
       self.age = 1
       self.posnumber = 1000
+      self.money = 0
+      self.salary = 0
 
 # -------------------------------------------------------
 
@@ -44,11 +46,12 @@ class Person:
       self.relationstatus = relationstatus
       self.sickness = []
       self.pets = []
+      self.posnumber = posnumber
   def ageyear(self):
       self.age += 1
       Mother.age += 1
       Father.age += 1
-      Sister.name += 1
+      Sister.age += 1
       if Brother.posnumber != "10000":
           Brother.age += 1
           Brother.money += Brother.salary
@@ -59,7 +62,7 @@ class Person:
   def promotion(self):
       if self.job.name != "Jobless":
           self.posnumber += 1 
-          newjobinfo = self.job.positions[posnumber-1]
+          newjobinfo = self.job.positions[self.posnumber-1]
           self.job_title, self.salary = newjobinfo
           print("promo completed")
 
@@ -76,7 +79,7 @@ class Car:
   def buy(self, buyer):
       if buyer.money >= self.price:
           buyer.money -= self.price
-          if buyer.carlisence == True:
+          if buyer.carlisence:
               print(f"I bought a {self.model} for {self.price} dollars.")
               buyer.possessions.append(self)
           else:
@@ -92,7 +95,7 @@ class peoplenil:
       self.money = money
       self.job = job
       self.job_title, self.salary = self.job.positions[posnumber-1]
-      self.health = health
+      self.health = random.randint(1, 100)
       self.smarts = random.randint(1, 100)
       self.health = random.randint(1, 100)
       self.craziness = random.randint(1, 100)
@@ -128,24 +131,6 @@ class Dog:
     self.health = random.randint(20, 100)
     self.smarts = random.randint(3, 100)
     self.energy = random.randint(1, 100)
-    self.tricks = []
-    self.possible_tricks = ["Roll over", "Sit", "Beg", "Play dead", "Fetch", "Shake hand"]
-  # def learn_trick(self, trick):
-  #   trickPercents = {
-  #     "Roll over (1)" : 70,
-  #     "Sit (2)" : 95,
-  #     "Beg (3)" : 50,
-  #     "Play dead (4)" : 30,
-  #     "Fetch (5)" : 80,
-  #     "Shake hand (6)" : 35,
-  #   }
-  #   print("Which trick do you want your dog to learn?")
-  #   for key in trickPercents:
-  #     print(key)
-  #   trick = input("Which number of trick do you want your dog to learn?")
-  #   # loop over trickPercents and find the trick that matches the input
-  #   # if the trick is found, make a random int from 1 to 100. If the number is less than the value in the dictonary, then the dog learns the trick.
-    
 
 class EventNode:
   def __init__(self, key, dic):
@@ -236,3 +221,12 @@ joblessK = Job("Jobless", 0, "NA", "NA", [("NA", 0)])
 basicjobs = [doctor, lawyer, engineer, teacher, storeworker]
 
 # -------------------------------------------------------
+
+class Sickness:
+  def __init__(self, name, treatablepercent, ytd, goaway):
+    self.name = name
+    self.treatablepercent = treatablepercent
+    # years till dead
+    self.ytd = ytd
+    self.yeargot = You.age
+    self.goaway = goaway

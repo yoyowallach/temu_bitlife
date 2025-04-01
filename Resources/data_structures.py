@@ -1,5 +1,6 @@
 # data_structures.py
 
+from Resources.classes import Sickness
 
 BN = [
     "James", "John", "Michael", "David", "Daniel", "Matthew", "Ethan", "Joshua", 
@@ -50,13 +51,25 @@ sponsors["OperaGX"] = "Ever wanted to be a pro gamer? Well dont be a noob, be a 
 
 # -------------------------------------------------------
 
-sickness = ["Diarrhea", "Rabies", "Covid-19", "Flu", "Poison Oak Rash", "Pneumonia", "Chickenpox", "Sprained Pinkie", "Mumps", "Bubonic Plague"]
+sickness = [
+    Sickness("Diarrhea", 85, 1000, 2),  
+    Sickness("Rabies", 98, 3, None),  
+    Sickness("Covid-19", 91, 3, 2),  
+    Sickness("Flu", 95, 3, 2),  
+    Sickness("Poison Oak Rash", 96, 10, 2),  
+    Sickness("Pneumonia", 82, 5, 3),  
+    Sickness("Chickenpox", 99, 10, 3),  
+    Sickness("Sprained Pinkie", 90, 1000, 2),  
+    Sickness("Mumps", 80, 5, 3),  
+    Sickness("Bubonic Plague", 95, 3, None),  
+    Sickness("HIV", 80, 30, None),  
+    Sickness("Cancer", 40, 5, None)
+]
 
 # -------------------------------------------------------
 
 boy_pet_names = [
-"Oliver", "Leo", "Milo", "Charlie", "Simba", "Max", "Tiger", "Shadow", "Rocky", "Jack", "Smokey", "Oscar", "Felix", "George", "Jasper", "Finn", "Loki", "Ollie", "Sam", "Tom", "Boots", "Oreo", "Zeus", "Ziggy", "Winston", "Tucker", "Toby", "Salem", "Romeo", "Pepper", "Murphy", "Luke", "Henry", "Gus", "Ghost", "Felix", 
-    "Duke", "Dexter", "Chester", "Charlie", "Binx", "Bear", "Atlas", "Archie", "Apollo", "Ace", "Bubba", "Banjo", "Boris", "Bean", "Max", "Charlie", "Buddy", "Rocky", "Bear", "Duke", "Tucker", "Jack", "Oliver", "Leo", "Milo", "Finn", "Zeus", "Winston", "Apollo", "Murphy", "Sam", "Simba", "Bruno", "Scout", "Cooper", "Teddy", "Riley", "Bailey", "Beau", "Blue", "Lucky", "Bentley", "Thor", "Ranger", "Atlas", "Banjo", "Cash", "Chief", "Diesel", "Gunner", "Hunter", "King", "Louie", "Maverick", "Moose", "Orion", "Ozzy", "Remy", "Rocco", "Scout", "Tank", "Toby", "Wolf", "Ziggy"
+"Oliver", "Leo", "Milo", "Charlie", "Simba", "Max", "Tiger", "Shadow", "Rocky", "Jack", "Smokey", "Oscar", "Felix", "George", "Jasper", "Finn", "Loki", "Ollie", "Sam", "Tom", "Boots", "Oreo", "Zeus", "Ziggy", "Winston", "Tucker", "Toby", "Salem", "Romeo", "Pepper", "Murphy", "Luke", "Henry", "Gus", "Ghost", "Felix", "Duke", "Dexter", "Chester", "Charlie", "Binx", "Bear", "Atlas", "Archie", "Apollo", "Ace", "Bubba", "Banjo", "Boris", "Bean", "Max", "Charlie", "Buddy", "Rocky", "Bear", "Duke", "Tucker", "Jack", "Oliver", "Leo", "Milo", "Finn", "Zeus", "Winston", "Apollo", "Murphy", "Sam", "Simba", "Bruno", "Scout", "Cooper", "Teddy", "Riley", "Bailey", "Beau", "Blue", "Lucky", "Bentley", "Thor", "Ranger", "Atlas", "Banjo", "Cash", "Chief", "Diesel", "Gunner", "Hunter", "King", "Louie", "Maverick", "Moose", "Orion", "Ozzy", "Remy", "Rocco", "Scout", "Tank", "Toby", "Wolf", "Ziggy"
 ]
 
 # -------------------------------------------------------

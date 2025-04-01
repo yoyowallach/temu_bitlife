@@ -4,6 +4,7 @@ import tkinter as tk
 from Resources.classes import Graph, EventNode, AgeNode, MainMenu, EventCategory, Cat, Dog
 import random
 from main import Mother, Father, Sister, You, Brother
+from Resources.data_structures import sponsors, sickness, boy_pet_names, girl_pet_names
 
 G = Graph()
 
@@ -12,7 +13,7 @@ G = Graph()
 Activiies = MainMenu("Activiies")
 for i in range(0, 30):
   AgeRoot = AgeNode(i)
-  G.agenodes.add(AgeRoot)
+  G.agenodes.(AgeRoot)
   Occupation = MainMenu(f"Occupation{i}")
   G.add_node(Occupation)
   Assets = MainMenu(f"Assets{i}")
@@ -79,7 +80,9 @@ if You.money >= 100:
     G.add_edge(Activiies, pet)
     dic = {
       "You went to the animal shelter. It costs $175 for a cat or a dog." : [
-        ("Get a boy cat", "",
+        ("Get a boy cat", """
+cat = Cat(random.choice(boy_pet_names)
+        """),
         ("Get a girl cat 2", "print('Option 2')"),
         ("Get a boy dog", "print('Option 1')"),
         ("Get a girl dog", "print('Option 1')")
