@@ -55,3 +55,9 @@ Activities
   - Discowd (Event Node) (13)
   - YuTub (Event Node) (13)
   - ClapChap (Event Node) (13)
+
+TODO:
+1. Start vacations
+2. Try not to get distracted with anything else while doing no 1
+3. Do gambling
+4. Work on lore or something

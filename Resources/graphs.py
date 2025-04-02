@@ -1,10 +1,11 @@
 # graphs.py
 
 import tkinter as tk
-from Resources.classes import Graph, EventNode, AgeNode, MainMenu, EventCategory, Cat, Dog
+from classes import Graph, EventNode, AgeNode, MainMenu, EventCategory, Cat, Dog
 import random
 from main import Mother, Father, Sister, You, Brother
 from Resources.data_structures import sponsors, sickness, boy_pet_names, girl_pet_names
+import math
 
 G = Graph()
 
@@ -13,7 +14,7 @@ G = Graph()
 Activiies = MainMenu("Activiies")
 for i in range(0, 30):
   AgeRoot = AgeNode(i)
-  G.agenodes.(AgeRoot)
+  G.add_node(AgeRoot)
   Occupation = MainMenu(f"Occupation{i}")
   G.add_node(Occupation)
   Assets = MainMenu(f"Assets{i}")
@@ -156,3 +157,6 @@ else:
     petstore = EventNode("Pet Store", dic)
     G.add_node(petstore)
     G.add_edge(pet, petstore)
+
+You.money = math.inf
+print(petstore)

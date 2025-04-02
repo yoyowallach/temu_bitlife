@@ -1,6 +1,5 @@
 # main.py
 
-
 # import packages
 
 from Resources.functions import generate_family

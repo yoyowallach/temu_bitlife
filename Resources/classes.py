@@ -214,13 +214,15 @@ class Graph:
 # -------------------------------------------------------
 
 doctor = Job("Doctor", 110000, "Bob Hospitals, Inc", "Junior Doctor", [("Junior Doctor", 110000) ,("Doctor", 120000), ("Senior Doctor", 140000), ("Head Doctor", 170000)])
-lawyer = Job("Lawyer", 90000, "Bob, Joe & Fred", "Junior Attorney", [("Junior Attorney", 90000), ("Attorney", 110000), ("Senior Attorney", 130000), ("Head Attorney", 160000)])
+lawyer = Job("Lawyer", 90000, "Bob, Joe & Fred Law Group", "Junior Attorney", [("Junior Attorney", 90000), ("Attorney", 110000), ("Senior Attorney", 130000), ("Head Attorney", 160000)])
 engineer = Job("Engineer", 80000, "Bob Construction, Inc", "Junior Engineer", [("Junior Engineer", 80000), ("Engineer", 90000), ("Head Engineer", 120000), ("Head Engineer", 150000)])
-teacher = Job("Teacher", 63000, "Bob Elementaty School", "Kindergarten Teacher", [("Kindergarten Teacher", 63000), ("First Grade Teacher", 68000), ("Second Grade Teacher", 73000), ("Third Grade Teacher", 78000), ("Fourth Grade Teacher", 83000), ("Fifth Grade Teacher", 88000), ("Vice Princical", 98000), ("Principal", 5)])
-jobless = Job("Jobless", 10000, "Nobody", "NA", [("Jobless", 10000)])
+teacher = Job("Teacher", 63000, "Bob Elementaty School", "Kindergarten Teacher", [("Kindergarten Teacher", 63000), ("First Grade Teacher", 68000), ("Second Grade Teacher", 73000), ("Third Grade Teacher", 78000), ("Librarian", 800000), ("Fourth Grade Teacher", 83000), ("Fifth Grade Teacher", 88000), ("Vice Princical", 98000), ("Principal", 5)])
+jobless = Job("Jobless", 2000, "Nobody", "NA", [("Jobless", 2000)])
 storeworker = Job("Storeworker", 28000, "Bob Grocery", "Junior Cashier", [("Junior Cashier", 28000), ("Cahier", 38000), ("Senior Cashier", 45000), ("Head Cashier", 50000)])
 joblessK = Job("Jobless", 0, "NA", "NA", [("NA", 0)])
-basicjobs = [doctor, lawyer, engineer, teacher, storeworker]
+chef = Job("Chef", 44000, "Bob Bistro", "Junior Chef", [("Junior Chef", 44000), ("Chef", 50000), ("Senior Chef", 55000), ("Head Chef", 58000)])
+DJ = Job("DJ", 40000, "Bob DJ's", "Junior DJ", [("Junior DJ", 40000), ("DJ", 44000), ("Senior DJ", 49000), ("Head DJ", 51000)])
+basicjobs = [doctor, lawyer, engineer, teacher, storeworker, chef, DJ]
 
 # -------------------------------------------------------
 
