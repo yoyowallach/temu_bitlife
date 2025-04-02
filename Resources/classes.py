@@ -119,6 +119,7 @@ class Cat:
     self.health = random.randint(20, 100)
     self.smarts = random.randint(3, 100)
     self.energy = random.randint(1, 100)
+    self.type = "Cat"
 # -------------------------------------------------------
 
 class Dog:
@@ -131,6 +132,7 @@ class Dog:
     self.health = random.randint(20, 100)
     self.smarts = random.randint(3, 100)
     self.energy = random.randint(1, 100)
+    self.type = "Dog"
 
 class EventNode:
   def __init__(self, key, dic):

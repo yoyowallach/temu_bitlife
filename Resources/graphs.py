@@ -81,10 +81,78 @@ if You.money >= 100:
     dic = {
       "You went to the animal shelter. It costs $175 for a cat or a dog." : [
         ("Get a boy cat", """
-cat = Cat(random.choice(boy_pet_names)
+if You.money >= 175:
+  You.money -= 175
+  cat = Cat(random.choice(boy_pet_names, random.randint(0, 4), "Male", You)
+  You.pets.append(cat)
+else:
+  print("You don't have enough money.")
         """),
-        ("Get a girl cat 2", "print('Option 2')"),
-        ("Get a boy dog", "print('Option 1')"),
-        ("Get a girl dog", "print('Option 1')")
+        ("Get a girl cat", """
+if You.money >= 175:
+  You.money -= 175
+  cat = Cat(random.choice(girl_pet_names, random.randint(0, 4), "Female", You)
+  You.pets.append(cat)
+else:
+  print("You don't have enough money.")
+        """),
+        ("Get a boy dog", """
+if You.money >= 175:
+  You.money -= 175
+  dog = Dog(random.choice(boy_pet_names, random.randint(0, 4), "Male", You)
+  You.pets.append(dog)
+else:
+  print("You don't have enough money.")
+        """),
+        ("Get a girl dog", """
+if You.money >= 175:
+  You.money -= 175
+  dog = Dog(random.choice(girl_pet_names, random.randint(0, 4), "Female", You)
+  You.pets.append(dog)
+else:
+  print("You don't have enough money.")
+        """)
       ]
     }
+    shelter = EventNode("Animal Shelter", dic)
+    G.add_node(shelter)
+    G.add_edge(pet, shelter)
+    dic = {
+      "You went to the pet store. It costs $175 for a cat or a dog." : [
+        ("Get a boy cat", """
+    if You.money >= 175:
+    You.money -= 175
+    cat = Cat(random.choice(boy_pet_names, random.randint(0, 4), "Male", You)
+    You.pets.append(cat)
+    else:
+    print("You don't have enough money.")
+        """),
+        ("Get a girl cat", """
+    if You.money >= 175:
+    You.money -= 175
+    cat = Cat(random.choice(girl_pet_names, random.randint(0, 4), "Female", You)
+    You.pets.append(cat)
+    else:
+    print("You don't have enough money.")
+        """),
+        ("Get a boy dog", """
+    if You.money >= 175:
+    You.money -= 175
+    dog = Dog(random.choice(boy_pet_names, random.randint(0, 4), "Male", You)
+    You.pets.append(dog)
+    else:
+    print("You don't have enough money.")
+        """),
+        ("Get a girl dog", """
+    if You.money >= 175:
+    You.money -= 175
+    dog = Dog(random.choice(girl_pet_names, random.randint(0, 4), "Female", You)
+    You.pets.append(dog)
+    else:
+    print("You don't have enough money.")
+        """)
+      ]
+    }
+    petstore = EventNode("Pet Store", dic)
+    G.add_node(petstore)
+    G.add_edge(pet, petstore)
