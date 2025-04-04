@@ -46,7 +46,7 @@ Activities
   - Pet Store (Event Node) (4)
  - Vacation (Event Category) (18)
   - Go on a vacation (Event Node) (18)
-  - Go on a cruise (Event Node) (18)
+  - Go on a cruise (Event Node) (18) - Scrapped (Might be added back later)
  - Social Media (Event Category) (13)
   - Took Tik (Event Node) (13)
   - Twooter (Event Node) (13)
@@ -57,7 +57,7 @@ Activities
   - ClapChap (Event Node) (13)
 
 TODO:
-1. Start vacations
-2. Try not to get distracted with anything else while doing no 1
+1. Start vacations - Done
+2. Try not to get distracted with anything else while doing no 1 - Done
 3. Do gambling
 4. Work on lore or something

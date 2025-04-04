@@ -5,7 +5,6 @@ from classes import Graph, EventNode, AgeNode, MainMenu, EventCategory, Cat, Dog
 import random
 from main import Mother, Father, Sister, You, Brother
 from Resources.data_structures import sponsors, sickness, boy_pet_names, girl_pet_names
-import math
 
 G = Graph()
 
@@ -157,6 +156,60 @@ else:
     petstore = EventNode("Pet Store", dic)
     G.add_node(petstore)
     G.add_edge(pet, petstore)
-
-You.money = math.inf
-print(petstore)
+  if node.key == 18:
+    vacation = EventCategory("Vacation")
+    G.add_node(vacation)
+    G.add_edge(Activiies, vacation)
+    dic = {
+      "Which vacation do you want to go on? Each vacation costs different ammounts." : [
+        ("Go to Nassau, Bahamas. It costs $3000.", """
+if You.money >= 3000:
+  You.money -= 3000
+  You.happiness += 30
+  print("I went to Nassau, Bahamas. I gained 30 happiness.")
+else:
+  print("You don't have enough money.")
+        """),
+        ("Go to Honolulu, Hawaii. It costs $4000.", """
+if You.money >= 4000:
+  You.money -= 4000
+  You.happiness += 40
+  print("I went to Honolulu, Hawaii. I gained 40 happiness.")
+else:
+  print("You don't have enough money.")
+        """),
+        ("Go to Miami, Flordia. It costs $2000.", """
+if You.money >= 2000:
+  You.money -= 2000
+  You.happiness += 20
+  print("I went to Miami, Flordia. I gained 20 happiness.")
+else:
+  print("You don't have enough money.")
+        """),
+        ("Go to ???. It costs $10000.", """
+if You.money >= 10000:
+  You.money -= 10000
+  You.happiness += 50
+  print("I went to ???. I gained 50 happiness.")
+        """),
+        ("Go to Tel Aviv, Isreal. It costs $1000.", """
+if You.money >= 1000:
+  You.money -= 1000
+  You.happiness += 70
+  print("I went to Tel Aviv, Isreal. I gained 70 happiness.")
+else:
+  print("You don't have enough money.")
+        """),
+        ("Go to Toronto, Canada. It costs $5000.", """
+if You.money >= 5000:
+  You.money -= 5000
+  You.happiness += 25
+  print("I went to Toronto, Canada. I gained 25 happiness.")
+else:
+  print("You don't have enough money.")
+        """)
+      ]
+    }
+    airplane = EventNode("Airplane", dic)
+    G.add_node(airplane)
+    G.add_edge(vacation, airplane)

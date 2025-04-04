@@ -1,3 +1,4 @@
+
 # classes.py
 
 from main import Mother, Father, Sister, You, Brother
@@ -220,7 +221,7 @@ teacher = Job("Teacher", 63000, "Bob Elementaty School", "Kindergarten Teacher",
 jobless = Job("Jobless", 2000, "Nobody", "NA", [("Jobless", 2000)])
 storeworker = Job("Storeworker", 28000, "Bob Grocery", "Junior Cashier", [("Junior Cashier", 28000), ("Cahier", 38000), ("Senior Cashier", 45000), ("Head Cashier", 50000)])
 joblessK = Job("Jobless", 0, "NA", "NA", [("NA", 0)])
-chef = Job("Chef", 44000, "Bob Bistro", "Junior Chef", [("Junior Chef", 44000), ("Chef", 50000), ("Senior Chef", 55000), ("Head Chef", 58000)])
+chef = Job("Chef", 44000, "Bob Restraunt", "Junior Chef", [("Junior Chef", 44000), ("Chef", 50000), ("Senior Chef", 55000), ("Head Chef", 58000)])
 DJ = Job("DJ", 40000, "Bob DJ's", "Junior DJ", [("Junior DJ", 40000), ("DJ", 44000), ("Senior DJ", 49000), ("Head DJ", 51000)])
 basicjobs = [doctor, lawyer, engineer, teacher, storeworker, chef, DJ]
 
@@ -234,3 +235,5 @@ class Sickness:
     self.ytd = ytd
     self.yeargot = You.age
     self.goaway = goaway
+
+# -------------------------------------------------------
