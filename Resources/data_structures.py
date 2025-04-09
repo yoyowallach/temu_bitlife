@@ -1,6 +1,6 @@
 # data_structures.py
 
-from Resources.classes import Sickness
+from classes import Sickness
 
 BN = [
     "James", "John", "Michael", "David", "Daniel", "Matthew", "Ethan",

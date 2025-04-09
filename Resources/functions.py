@@ -2,8 +2,8 @@
 
 import tkinter as tk
 import random
-from Resources.data_structures import BN, GN, LN, sponsors
-from Resources.classes import Person, Brotherwhoisnotalive, basicjobs, joblessK
+from data_structures import BN, GN, LN, sponsors
+from classes import Person, Brotherwhoisnotalive, basicjobs, joblessK
 
 # -------------------------------------------------------
 

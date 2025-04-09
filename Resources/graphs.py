@@ -4,7 +4,7 @@ import tkinter as tk
 from classes import Graph, EventNode, AgeNode, MainMenu, EventCategory, Cat, Dog
 import random
 from main import Mother, Father, Sister, You, Brother
-from Resources.data_structures import sponsors, sickness, boy_pet_names, girl_pet_names
+from data_structures import sponsors, sickness, boy_pet_names, girl_pet_names
 
 G = Graph()
 
